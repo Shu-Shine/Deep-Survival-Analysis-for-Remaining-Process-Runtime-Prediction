@@ -34,7 +34,7 @@ DeepSurv is a deep feedforward neural network. The input to the network is the o
 ### Point prediction
 Another problem with applying survival analysis to the remaining runtime prediction is that the outcome of the survival model is a probability distribution, while the ultimate goal of our task is to gain the estimation of the left time in the process, which is only a single value. An additional procedure was implemented, which was to convert probability distribution into point prediction using a probability threshold, determined from grid search.
 
-References
+References  
 [1] Boudewijn van Dongen, Bpi challenge 2017, 2017, [online] Available: https://data.4tu.nl/articles/ /12696884/1 .  
 [2] Liese Blevi, et al. Process mining on the loan application process of a Dutch Financial Institute. [online] Available: https://www.win.tue.nl/bpi/2017/bpi2017_winner_professional.pdf .  
 [3] Katzman, Jared L., Uri Shaham, Alexander Cloninger, Jonathan Bates, Tingting Jiang, and Yuval Kluger. ”DeepSurv: personalized treatment recommender system using a Cox proportional hazards deep neural network.” BMC medical research methodology 18, no. 1 (2018): 1-12.  
