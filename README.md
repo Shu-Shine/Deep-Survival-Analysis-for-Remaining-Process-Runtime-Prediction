@@ -6,10 +6,10 @@ This study delves into the crucial task of estimating process completion times, 
 ## Dataset
 We conducted the experiment using the real-life dataset which is publicly available, on the prediction of the remaining duration of loan application processes. The historical data is from a Dutch Financial Institute, containing all applications filed trough an online system in 2016 and their subsequent events until February 1st, 2017, which is available at the 4TU Center for Research Data[1]. The data is in the form of an event log, which consists of many cases, i.e. the instances of the business process. 
 <div align=center>
-<img width='400' src='https://github.com/Shu-Shine/Deep-Survival-Analysis-for-Remaining-Process-Runtime-Prediction/blob/main/images/Loan_applications_process.png'/>  
-Fig. 1 Loan applications process[2].
+<img width='450' src='https://github.com/Shu-Shine/Deep-Survival-Analysis-for-Remaining-Process-Runtime-Prediction/blob/main/images/Loan_applications_process.png'/>  
+<div>Fig. 1 Loan applications process[2].</div>
 <img width='400' src='https://github.com/Shu-Shine/Deep-Survival-Analysis-for-Remaining-Process-Runtime-Prediction/blob/main/images/event_log.png'/> 
-Fig. 2 Event log data.
+<div>Fig. 2 Event log data.</div>
 </div>
 
 ## Method
