@@ -20,10 +20,9 @@ We conducted the experiment using the real-life dataset which is publicly availa
 the nth bucket, and aggregation encoding considers all events in each bucket, by encoding attributes into feature vectors using different aggregation functions. 
 
 ### Deep Learning-based Survival Analysis Model
-DeepSurv is a well-known and influential method in the realm of Deep Learning-based Survival Analysis introduced by Jared Katzman et al [3]. DeepSurv enhances its capabilities by incorporating a deep neural network to learn intricate patterns and relationships from the data. 
-DeepSurv primarily extends the Cox Proportional Hazards model, by incorporating a deep neural network to learn intricate patterns and relationships from the data. DeepSurv adopts the Maximum Likelihood Estimation (MLE) to train the model and construct the objective function with the average negative log partial likelihood with regularization. The partial likelihood is
+DeepSurv is a well-known and influential method in the realm of Deep Learning-based Survival Analysis introduced by Jared Katzman et al [3]. The method primarily extends the Cox Proportional Hazards model and enhances its capabilities by incorporating a deep neural network to learn intricate patterns and relationships from the data. DeepSurv adopts the Maximum Likelihood Estimation (MLE) to train the model and construct the objective function with the average negative log partial likelihood with regularization. The partial likelihood is
 <div align=center> 
-<img width='400' src='https://github.com/Shu-Shine/Deep-Survival-Analysis-for-Remaining-Process-Runtime-Prediction/blob/main/images/equation1.jpg'/>   
+<img width='400' src='https://github.com/Shu-Shine/Deep-Survival-Analysis-for-Remaining-Process-Runtime-Prediction/blob/main/images/equation1.jpg'/>            (1) 
 </div>
 where the numerator is the hazard of cases with events indexed by i and their event times at ti, and the denominator is the summed hazard of all cases j still survival at that time, which also includes the censoring data that have not dropped out yet. This is how the survival model can handle the incomplete data, by involving all the information in its objective function.  
 
