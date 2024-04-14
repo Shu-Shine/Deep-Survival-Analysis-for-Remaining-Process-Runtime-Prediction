@@ -2,10 +2,10 @@
 
 ## Introduction
 Using neural networks for remaining time prediction of business processes has become the state-of-the-art in recent years. One direction designed for estimating the time to an event of interest has been mainly neglected in this domain so far: Survival Analysis. Survival Analysis emerged from the field of statistics, but recently also methods that combine Survival Analysis and Deep Learning have been proposed. 
-This study represents the inaugural attempt to apply Deep Learning-based Survival Analysis to the domain of Remaining Process Runtime Prediction (RPR). We assess the effectiveness of this approach and analyze potential factors that could influence its performance. By exploring this novel direction, we lay the foundation for future advancements in leveraging Survival Analysis techniques for RPR.
+This study represents the inaugural attempt to apply Deep Learning-based Survival Analysis to the domain of Remaining Process Runtime Prediction. We assess the effectiveness of this approach and analyze potential factors that could influence its performance. Through this innovative exploration, we provide a basis for future advancements in utilizing Survival Analysis techniques for remaining time prediction.
 
 ## Dataset
-We conducted the experiment using the real-life dataset which is publicly available, on the prediction of the remaining duration of loan application processes. The historical data is from a Dutch Financial Institute, containing all applications filed trough an online system in 2016 and their subsequent events until February 1st, 2017, which is available at the 4TU Center for Research Data[1]. The data is in the form of an event log, which consists of many cases, i.e. the instances of the business process. 
+We conducted an experiment utilizing a real-life dataset that is publicly accessible, focusing on predicting the remaining duration of loan application processes. The historical data was sourced from a Dutch Financial Institute, which is available at the 4TU Center for Research Data[1]. The data is structured as an event log containing numerous cases, representing instances of the business process.
 <div align=center>
 <img width='400' src='https://github.com/Shu-Shine/Deep-Survival-Analysis-for-Remaining-Process-Runtime-Prediction/blob/main/images/Loan_applications_process.png'/>  
 <div>Fig. 1 Loan applications process[2].</div>
@@ -34,6 +34,9 @@ DeepSurv is a deep feedforward neural network. The input to the network is the o
 
 ### Point prediction
 Another problem with applying survival analysis to the remaining runtime prediction is that the outcome of the survival model is a probability distribution, while the ultimate goal of our task is to gain the estimation of the left time in the process, which is only a single value. An additional procedure was implemented, which was to convert probability distribution into point prediction using a probability threshold, determined from grid search.
+
+## Result
+The effectiveness of DeepSurv can be described by comparing its Mean Absolute Error (MAE) with that of other models in the evaluation. In this case, DeepSurv achieved an MAE of 7.842, which overperforms the traditional methods like Transition system and Stochastic Petri net. While DeepSurv did not achieve the highest performance in this particular evaluation, being outperformed by LSTM with a score of 7.15, it still demonstrates the capability to provide reasonably accurate predictions of remaining process runtime, showcasing its potential as a viable approach in this field.  
 
 References  
 [1] Boudewijn van Dongen, Bpi challenge 2017, 2017, [online] Available: https://data.4tu.nl/articles/_/12696884/1 .  
