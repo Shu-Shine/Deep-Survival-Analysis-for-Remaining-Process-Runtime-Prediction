@@ -2,7 +2,7 @@
 
 ## Introduction
 Using neural networks for remaining time prediction of business processes has become the state-of-the-art in recent years. One direction designed for estimating the time to an event of interest has been mainly neglected in this domain so far: Survival Analysis. Survival Analysis emerged from the field of statistics, but recently also methods that combine Survival Analysis and Deep Learning have been proposed. 
-This study represents the inaugural attempt to apply Deep Learning-based Survival Analysis to the domain of Remaining Process Runtime Prediction. We assess the effectiveness of this approach and analyze potential factors that could influence its performance. Through this innovative exploration, we provide a basis for future advancements in utilizing Survival Analysis techniques for remaining time prediction.
+This study represents the initial try to apply Deep Learning-based Survival Analysis to the domain of Remaining Process Runtime Prediction. We assess the effectiveness of this approach and analyze potential factors that could influence its performance. Through this innovative exploration, we provide a basis for future advancements in utilizing Survival Analysis techniques for remaining time prediction.
 
 ## Dataset
 We conducted an experiment utilizing a real-life dataset that is publicly accessible, focusing on predicting the remaining duration of loan application processes. The historical data was sourced from a Dutch Financial Institute, which is available at the 4TU Center for Research Data[1]. The data is structured as an event log containing numerous cases, representing instances of the business process.
